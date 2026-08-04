@@ -1,0 +1,21 @@
+COMO COLOCAR A LOGO CERTA
+=========================
+
+1. Clique com o botao direito na imagem do BitBloc que voce mandou no chat
+   (ou abra a imagem anexada) e "Salvar imagem como..."
+
+2. Salve nestes DOIS nomes na pasta:
+
+   C:\Users\mathe\OneDrive\Documentos\bitbloc\bitbloc-site\assets\
+
+   - mascote-bitbloc.png
+   - logo-mark.png
+   (pode salvar uma vez e duplicar/renomear a segunda)
+
+3. Abra de novo:
+
+   http://127.0.0.1:5500
+
+   ou clique em abrir.bat
+
+Pronto — a lagartixa SVG some e entra a sua imagem.

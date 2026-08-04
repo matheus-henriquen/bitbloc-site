@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="BitBloc">
+  <rect width="200" height="200" fill="#ffffff" rx="24"/>
+  <!-- blocks -->
+  <g stroke="#071525" stroke-width="3" stroke-linejoin="round">
+    <path fill="#f0b91a" d="M70 78l28-14 28 14v28l-28 14-28-14z"/>
+    <path fill="#2a7be8" d="M70 106l28-14 28 14v28l-28 14-28-14z"/>
+    <path fill="#a8b0bc" d="M70 134l28-14 28 14v28l-28 14-28-14z"/>
+    <path fill="#2a7be8" d="M118 120l28-14 28 14v28l-28 14-28-14z"/>
+    <path fill="#a8b0bc" d="M118 148l28-14 28 14v22l-28 14-28-14z"/>
+  </g>
+  <!-- gecko body -->
+  <ellipse cx="118" cy="88" rx="34" ry="22" fill="#f0b91a" stroke="#071525" stroke-width="3" transform="rotate(-28 118 88)"/>
+  <circle cx="142" cy="68" r="14" fill="#f0b91a" stroke="#071525" stroke-width="3"/>
+  <circle cx="147" cy="66" r="4.5" fill="#2a7be8"/>
+  <circle cx="148" cy="65" r="1.6" fill="#071525"/>
+  <path d="M88 98c-10 8-18 22-16 34" fill="none" stroke="#f0b91a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M88 98c-10 8-18 22-16 34" fill="none" stroke="#071525" stroke-width="3" stroke-linecap="round"/>
+  <!-- circuit dots -->
+  <g fill="#071525">
+    <circle cx="108" cy="82" r="2"/>
+    <circle cx="118" cy="78" r="2"/>
+    <circle cx="128" cy="84" r="2"/>
+  </g>
+  <path d="M108 82h10M118 78v8M128 84h-8" stroke="#071525" stroke-width="1.5" fill="none"/>
+</svg>

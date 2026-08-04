@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BitBloc — Brinquedos eletrônicos para adolescentes e adultos</title>
+    <meta
+      name="description"
+      content="BitBloc: robótica, drones FPV, kits DIY e gadgets eletrônicos para montar, programar e jogar de verdade."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="#topo" class="brand-mark" aria-label="BitBloc início">
+          <img src="assets/mascote-bitbloc.png" alt="" class="brand-mark__icon" width="44" height="44" />
+          <span class="brand-wordmark" aria-hidden="true">
+            <span class="brand-wordmark__bit">Bit</span>
+            <span class="brand-wordmark__bloc">Bloc</span>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Principal">
+          <a href="#destaques">Destaques</a>
+          <a href="#produtos">Vitrine</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <a href="#produtos" class="header-cta">Ver vitrine</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="topo" aria-labelledby="hero-brand">
+        <div class="hero__glow hero__glow--yellow" aria-hidden="true"></div>
+        <div class="hero__glow hero__glow--blue" aria-hidden="true"></div>
+        <div class="hero__circuit" aria-hidden="true"></div>
+
+        <div class="hero__content">
+          <p class="hero__kicker">Brinquedos eletrônicos · 12+</p>
+          <h1 id="hero-brand" class="hero__brand">
+            <span class="brand-wordmark brand-wordmark--hero">
+              <span class="brand-wordmark__bit">Bit</span>
+              <span class="brand-wordmark__bloc">Bloc</span>
+            </span>
+          </h1>
+          <p class="hero__tagline">
+            Monta. Programa. Joga de verdade — gadgets e kits para adolescentes e makers adultos.
+          </p>
+          <div class="hero__actions">
+            <a href="#produtos" class="btn btn--primary">Ver vitrine</a>
+            <a href="#categorias" class="btn btn--ghost">Explorar categorias</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__logo-wrap">
+            <img
+              src="assets/mascote-bitbloc.png"
+              alt="Mascote BitBloc: lagarto amarelo com padrão de circuito sobre blocos eletrônicos"
+              class="hero__logo"
+              width="1024"
+              height="1024"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section featured" id="destaques">
+        <div class="section__head">
+          <h2>Em destaque</h2>
+          <p>Os kits que a comunidade mais monta agora.</p>
+        </div>
+        <div class="featured__grid" id="featured-grid"></div>
+      </section>
+
+      <section class="section products" id="produtos">
+        <div class="section__head section__head--row">
+          <div>
+            <h2>Vitrine BitBloc</h2>
+            <p>Filtra, compara e monta teu setup eletrônico.</p>
+          </div>
+          <p class="products__count" id="products-count">0 itens</p>
+        </div>
+
+        <div class="products__toolbar">
+          <label class="products__search">
+            <span class="sr-only">Buscar produtos</span>
+            <input type="search" id="search-input" placeholder="Buscar robô, drone, kit..." />
+          </label>
+          <div class="filter-chips" id="filter-chips" role="tablist" aria-label="Categorias"></div>
+          <label class="products__sort">
+            <span>Ordenar</span>
+            <select id="sort-select">
+              <option value="featured">Destaques</option>
+              <option value="rating">Melhor nota</option>
+              <option value="price-asc">Menor preço</option>
+              <option value="price-desc">Maior preço</option>
+            </select>
+          </label>
+        </div>
+
+        <ul class="product-grid" id="product-grid"></ul>
+        <p class="products__empty" id="products-empty" hidden>Nada encontrado — tenta outro filtro ou busca.</p>
+      </section>
+
+      <section class="section journey" id="como-funciona">
+        <div class="section__head">
+          <h2>Como roda a BitBloc</h2>
+          <p>Do clique ao primeiro projeto em três passos.</p>
+        </div>
+        <ol class="journey__list">
+          <li class="journey__item">
+            <span class="journey__num">01</span>
+            <div>
+              <h3>Escolhe o circuito</h3>
+              <p>Robótica, FPV, DIY ou gadget — cada trilha com nível e idade claros.</p>
+            </div>
+          </li>
+          <li class="journey__item">
+            <span class="journey__num">02</span>
+            <div>
+              <h3>Monta e programa</h3>
+              <p>Guias BitLab + app. Começa no modo assistido e libera o código depois.</p>
+            </div>
+          </li>
+          <li class="journey__item">
+            <span class="journey__num">03</span>
+            <div>
+              <h3>Upgrade infinito</h3>
+              <p>Peças extras, APIs e comunidade pra ir além do unboxing.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section categories" id="categorias">
+        <div class="section__head">
+          <h2>Escolhe o teu circuito</h2>
+          <p>Quatro trilhas para quem curte tech com as mãos na massa.</p>
+        </div>
+        <ul class="category-list" id="category-list"></ul>
+      </section>
+
+      <section class="section audience" id="para-quem">
+        <div class="audience__panel">
+          <div class="audience__copy">
+            <h2>Feito para quem já passou da fase do brinquedo descartável</h2>
+            <p>
+              BitBloc é para adolescentes e adultos que querem construir, hackear e jogar com
+              hardware real — robótica, FPV, DIY e gadgets com API.
+            </p>
+            <ul class="audience__points">
+              <li>Guias claros, documentação aberta</li>
+              <li>Peças reutilizáveis e upgrades</li>
+              <li>Comunidade maker, não só unboxing</li>
+            </ul>
+          </div>
+          <aside class="audience__aside" aria-hidden="true">
+            <div class="trace-board">
+              <span class="trace trace--1"></span>
+              <span class="trace trace--2"></span>
+              <span class="trace trace--3"></span>
+              <span class="pad pad--1"></span>
+              <span class="pad pad--2"></span>
+              <span class="pad pad--3"></span>
+              <span class="chip">BB</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section reviews" id="reviews">
+        <div class="section__head">
+          <h2>Quem já montou</h2>
+          <p>Feedback real de teens e adultos makers.</p>
+        </div>
+        <ul class="reviews__grid" id="reviews-grid"></ul>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="section__head">
+          <h2>Perguntas frequentes</h2>
+          <p>Tudo que a galera pergunta antes de pedir.</p>
+        </div>
+        <div class="faq__list" id="faq-list"></div>
+      </section>
+
+      <section class="section newsletter" id="newsletter">
+        <div class="newsletter__panel">
+          <div>
+            <h2>Drop de kits e firmwares</h2>
+            <p>Entra na lista pra lançamentos, packs de peças e builds da comunidade.</p>
+          </div>
+          <form class="newsletter__form" id="newsletter-form">
+            <label class="sr-only" for="news-email">E-mail</label>
+            <input id="news-email" type="email" required placeholder="seu@email.com" />
+            <button type="submit" class="btn btn--primary">Quero receber</button>
+          </form>
+          <p class="newsletter__ok" id="newsletter-ok" hidden>Beleza — te avisamos no próximo drop.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div>
+          <p class="brand-wordmark brand-wordmark--footer">
+            <span class="brand-wordmark__bit">Bit</span>
+            <span class="brand-wordmark__bloc">Bloc</span>
+          </p>
+          <p class="site-footer__tag">Eletrônica para montar, programar e jogar — 12+.</p>
+        </div>
+        <div class="site-footer__cols">
+          <div>
+            <h3>Loja</h3>
+            <a href="#destaques">Destaques</a>
+            <a href="#produtos">Vitrine</a>
+            <a href="#categorias">Categorias</a>
+          </div>
+          <div>
+            <h3>Ajuda</h3>
+            <a href="#faq">FAQ</a>
+            <a href="#newsletter">Newsletter</a>
+            <a href="mailto:ola@bitbloc.store">ola@bitbloc.store</a>
+          </div>
+          <div>
+            <h3>Entrega</h3>
+            <span>Brasil · 3–7 dias</span>
+            <span>Frete grátis acima de R$ 400</span>
+            <span>Garantia 12 meses</span>
+          </div>
+        </div>
+      </div>
+      <p class="site-footer__legal">© <span id="year"></span> BitBloc. Demo de vitrine.</p>
+    </footer>
+
+    <div class="modal-overlay" id="product-modal" hidden>
+      <div class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button type="button" class="product-modal__close" id="modal-close">Fechar</button>
+        <div class="product-modal__visual" id="modal-visual"></div>
+        <div class="product-modal__body">
+          <p class="product-modal__eyebrow" id="modal-eyebrow"></p>
+          <h2 id="modal-title"></h2>
+          <p id="modal-description"></p>
+          <ul class="product-modal__badges" id="modal-badges"></ul>
+          <h3>Specs</h3>
+          <ul class="product-modal__specs" id="modal-specs"></ul>
+          <div class="product-modal__buy">
+            <div>
+              <strong id="modal-price"></strong>
+              <s id="modal-old-price" hidden></s>
+              <span id="modal-stock"></span>
+            </div>
+            <a href="mailto:ola@bitbloc.store" class="btn btn--primary">Pedir info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

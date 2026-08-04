@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-label="BitBloc mascote">
+  <rect width="640" height="640" fill="#ffffff" rx="48"/>
+  <!-- blocks cluster -->
+  <g stroke="#071525" stroke-width="6" stroke-linejoin="round">
+    <g transform="translate(150 210)">
+      <path fill="#f0b91a" d="M0 70l70-36 70 36v72l-70 36-70-36z"/>
+      <path fill="#2a7be8" d="M0 142l70-36 70 36v72l-70 36-70-36z"/>
+      <path fill="#a8b0bc" d="M0 214l70-36 70 36v72l-70 36-70-36z"/>
+    </g>
+    <g transform="translate(280 280)">
+      <path fill="#2a7be8" d="M0 70l70-36 70 36v72l-70 36-70-36z"/>
+      <path fill="#a8b0bc" d="M0 142l70-36 70 36v72l-70 36-70-36z"/>
+      <path fill="#a8b0bc" d="M80 178l70-36 70 36v72l-70 36-70-36z"/>
+    </g>
+  </g>
+  <!-- circuit etch on blocks -->
+  <g stroke="#071525" stroke-width="2" opacity="0.35" fill="none">
+    <path d="M190 250h40M210 250v30M250 280h-30"/>
+    <path d="M190 330h50M220 320v40"/>
+    <path d="M320 330h40M340 330v35"/>
+  </g>
+  <!-- gecko -->
+  <g stroke="#071525" stroke-width="6" stroke-linejoin="round">
+    <ellipse cx="360" cy="250" rx="110" ry="68" fill="#f0b91a" transform="rotate(-30 360 250)"/>
+    <circle cx="445" cy="185" r="46" fill="#f0b91a"/>
+    <circle cx="460" cy="178" r="14" fill="#2a7be8"/>
+    <circle cx="464" cy="174" r="5" fill="#071525"/>
+    <path d="M270 290c-40 35-70 90-55 140" fill="none" stroke="#f0b91a" stroke-width="34" stroke-linecap="round"/>
+    <path d="M270 290c-40 35-70 90-55 140" fill="none" stroke="#071525" stroke-width="6" stroke-linecap="round"/>
+    <path d="M300 220c20 5 25 30 10 45" fill="none" stroke="#f0b91a" stroke-width="18" stroke-linecap="round"/>
+    <path d="M390 300c25 10 45 35 35 55" fill="none" stroke="#f0b91a" stroke-width="18" stroke-linecap="round"/>
+  </g>
+  <!-- pcb pattern on gecko -->
+  <g fill="#071525">
+    <circle cx="330" cy="230" r="5"/>
+    <circle cx="360" cy="220" r="5"/>
+    <circle cx="390" cy="235" r="5"/>
+    <circle cx="355" cy="255" r="5"/>
+  </g>
+  <path d="M330 230h30M360 220v35M390 235h-25M355 255h20" stroke="#071525" stroke-width="3" fill="none"/>
+  <!-- wordmark -->
+  <text x="320" y="560" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="72" font-weight="800">
+    <tspan fill="#0b1f3a">Bit</tspan><tspan fill="#2a7be8">Bloc</tspan>
+  </text>
+</svg>
